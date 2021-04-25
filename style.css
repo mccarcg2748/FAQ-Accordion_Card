@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+  font-family: "KumbahSans", sans-serif;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  box-sizing: border-box;
+  background-image: linear-gradient(0deg, #6565e7, #af67e9);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  overflow: scroll;
+}
+
+.main-box{
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+  width: 85vw;
+  border-radius: 20px;
+  box-shadow: 0 50px 50px -50px #000;
+  background-color: white;
+  overflow: hidden;
+  z-index: 1;
+  
+}
+
+.img1{
+  max-width: 60vw;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 25px;
+  top: 5%;
+  margin: auto;
+}
+
+.img2{
+  max-width: 60vw;
+  margin-right: auto;
+  margin-left: auto;
+  display: block
+}
+
+.box1{
+  display: none;
+  float: left;
+  height: 100%;
+  width: 40%;
+  position: relative;
+  max-width: 40vw;
+}
+.spacer-div{ 
+  width: 5vw;
+}
+
+.img3{
+  position: absolute;
+  top: 15%;
+  height: auto;
+  width: 100%;
+  right: 15%;
+}
+
+.img4{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  display: none;
+}
+
+.img5{
+  height: 100%;
+  position: absolute;
+  right: 10px;
+}
+
+.box2{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.header{
+  text-align: center;
+}
+
+button{
+  font-family: "KumbahSans", sans-serif;
+  font-size: 12px;
+  color: hsl(237, 12%, 33%)
+}
+
+.accordion{
+  background-color: white;
+  cursor: pointer;
+  text-align: left;
+  width: 90%;
+  height: 7%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  transition: 0.4s;
+}
+
+
+.arrow{
+  float: right;
+  transition: 0.35s;
+  height: auto;
+  width: auto;
+}
+
+.accordion:hover img{
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.arrow-active{
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+.panel{
+  width: 90%;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  font-size: 12px;
+  color:  hsl(240, 6%, 50%);
+}
+
+.text{
+  padding-left: 7px;
+}
+
+.active{
+  font-weight: bold;
+  color: hsl(238, 29%, 16%);
+  border-bottom: none;
+}
+
+.unselect{
+  transition: 0.2s ease-in
+}
+
+
+@media(min-width: 900px){
+  .img1{
+    top: 6%;
+  }
+}
+
+@media(min-height: 900px) and (min-width: 700px){
+  button{
+    font-size: 20px;
+  }
+  .panel{
+    font-size: 15px;
+  }
+}
+
+@media(min-height: 1000px) and (min-width: 1000px){
+  button{
+    font-size: 25px;
+  }
+  .panel{
+    font-size: 20px;
+  }
+} 
+
+@media(min-width: 1100px){
+  .main-box{
+    display: flex;
+    position: fixed;
+
+  }
+  .img1{
+    display: none;
+  }
+  .img2{
+    display: none;
+  }
+  .box1{
+    display: initial;
+
+
+  }
+  .box2{
+    width: 70%;
+
+  }
+  .img4{
+    display: initial;
+  }
+}
+
+
+/*@media(min-width: 1300px) and (min-height: 1200px){
+  .img4{
+    height: 300px;
+    margin-top: 5%;
+  }
+}
+@media(min-height: 960px){
+  .img4{
+    top: 45%;
+  }
+}*/
+
+
+@media(min-width: 2300px) and (min-height: 1300px){
+  .img4{
+    height: 300px;
+  }
+  .header{
+    padding: 30px;
+    font-size: 60px;
+  }
+  button{
+    font-size: 40px;
+  }
+  .panel{
+    font-size:35px;
+  }
+  .arrow{
+    height: 15px;
+  }
+}
+
+
+
