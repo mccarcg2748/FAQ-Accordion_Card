@@ -1,13 +1,11 @@
-let acc = document.getElementsByClassName('accordion');
+let acc = document.querySelectorAll('.accordion');
 let panel = document.getElementsByClassName('panel');
 let arrow = document.querySelectorAll('.arrow');
 
-
-for(const acc of accordion){
-  acc.addEventListener('click', () =>{
-    console.log(acc);
-    acc.classList.toggle("active");
-    let panel = acc.nextElementSibling;
+for(const a of acc){
+  a.addEventListener('click', () =>{
+    a.classList.toggle("active");
+    let panel = a.nextElementSibling;
     if(panel.style.display === "block") {
       panel.classList.add('unselect')
     } 
